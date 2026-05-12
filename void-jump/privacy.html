@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Void Jump</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fg: #1a1d2b;
+        --muted: #5b6072;
+        --bg: #fafbff;
+        --accent: #4a64ff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8eaf2;
+          --muted: #9aa0b3;
+          --bg: #0b0d1a;
+          --accent: #8aa0ff;
+        }
+      }
+      body {
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--fg);
+        background: var(--bg);
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 20px 64px;
+      }
+      .lang-switch {
+        float: right;
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .lang-switch a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .lang-switch .current {
+        color: var(--fg);
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 20px;
+        border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+        padding-bottom: 4px;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      code {
+        background: color-mix(in srgb, var(--fg) 10%, transparent);
+        padding: 1px 5px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <span class="current">EN</span> · <a href="./privacy-ru.html">RU</a>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 12 May 2026</p>
+
+    <p>
+      This Privacy Policy describes how the Void Jump mobile and web game ("the App")
+      collects, uses, and shares information when you play it.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      The App is developed and operated by AndyGo Games (contact:
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>). The App is currently
+      free, contains no advertisements, and offers no in-app purchases.
+    </p>
+
+    <h2>2. What we collect</h2>
+    <ul>
+      <li>
+        <strong>Anonymous device identifier.</strong> On first launch we generate a
+        random UUID (<code>deviceUuid</code>) and store it locally. We never read
+        the Android Advertising ID, IMEI, MAC address, or any other persistent
+        hardware identifier.
+      </li>
+      <li>
+        <strong>Display name.</strong> A short nickname shown on the leaderboard. By
+        default it is an auto-generated placeholder; on the Yandex Games platform it
+        may be sourced from your Yandex public profile if you choose to sign in.
+      </li>
+      <li>
+        <strong>Gameplay data.</strong> Final score and number of platforms cleared
+        for each completed run.
+      </li>
+      <li>
+        <strong>Settings.</strong> Locale, sound on/off, music on/off, premium
+        entitlement flags.
+      </li>
+    </ul>
+    <p>
+      We do <strong>not</strong> collect: your real name, email, phone number,
+      location, contacts, photos, microphone or camera input, or any health data.
+    </p>
+
+    <h2>3. How we use it</h2>
+    <ul>
+      <li>To show global, weekly, and per-platform leaderboards.</li>
+      <li>To synchronise your progress and settings across your devices.</li>
+      <li>To detect and mitigate cheating (input cadence and score plausibility checks).</li>
+      <li>To respond to support requests.</li>
+    </ul>
+
+    <h2>4. Where it is stored</h2>
+    <p>
+      Game data is stored in Supabase (PostgreSQL, hosted on AWS) and served via
+      Cloudflare Workers. Both providers operate under their own privacy practices:
+    </p>
+    <ul>
+      <li><a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a></li>
+      <li><a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a></li>
+    </ul>
+
+    <h2>5. Third-party platforms</h2>
+    <p>
+      Depending on where you obtained the App, additional platform-level data
+      handling applies:
+    </p>
+    <ul>
+      <li><a href="https://yandex.com/legal/games_termsofuse/" rel="noopener">Yandex Games</a></li>
+      <li><a href="https://policies.google.com/privacy" rel="noopener">Google Play</a></li>
+      <li><a href="https://www.rustore.ru/help/legal/privacy-policy" rel="noopener">RuStore</a></li>
+    </ul>
+
+    <h2>6. Sharing</h2>
+    <p>
+      Your display name and score may appear in publicly visible leaderboards
+      within the App. We do not sell or rent your data to third parties.
+    </p>
+
+    <h2>7. Retention</h2>
+    <p>
+      We keep gameplay records for as long as the App is operated. You may request
+      deletion of your record at any time (see Section 10).
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      The App is suitable for general audiences. We do not knowingly collect data
+      from children under 13 (or the equivalent age in your jurisdiction).
+    </p>
+
+    <h2>9. Your rights</h2>
+    <p>
+      Subject to your local law (including the GDPR for EU residents), you may
+      request access to, correction of, or deletion of the data associated with
+      your <code>deviceUuid</code>. To exercise these rights, contact us at
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a> and include the
+      <code>deviceUuid</code> shown in the App's settings screen.
+    </p>
+
+    <h2>10. Changes</h2>
+    <p>
+      We may update this policy from time to time. The "Last updated" date at the
+      top reflects the current version. Material changes will be announced inside
+      the App.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions? Email
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>.
+    </p>
+  </body>
+</html>

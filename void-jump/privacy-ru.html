@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Политика конфиденциальности — Void Jump</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fg: #1a1d2b;
+        --muted: #5b6072;
+        --bg: #fafbff;
+        --accent: #4a64ff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8eaf2;
+          --muted: #9aa0b3;
+          --bg: #0b0d1a;
+          --accent: #8aa0ff;
+        }
+      }
+      body {
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--fg);
+        background: var(--bg);
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 20px 64px;
+      }
+      .lang-switch {
+        float: right;
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .lang-switch a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .lang-switch .current {
+        color: var(--fg);
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 20px;
+        border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+        padding-bottom: 4px;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      code {
+        background: color-mix(in srgb, var(--fg) 10%, transparent);
+        padding: 1px 5px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <a href="./privacy.html">EN</a> · <span class="current">RU</span>
+    </div>
+    <h1>Политика конфиденциальности</h1>
+    <p class="updated">Обновлено: 12 мая 2026</p>
+
+    <p>
+      Настоящая Политика конфиденциальности описывает, как мобильная и веб-игра
+      Void Jump («Приложение») собирает, использует и передаёт информацию во
+      время вашей игры.
+    </p>
+
+    <h2>1. Кто мы</h2>
+    <p>
+      Приложение разработано и обслуживается AndyGo Games (контакт:
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>). На
+      текущий момент Приложение бесплатное, не содержит рекламы и встроенных
+      покупок.
+    </p>
+
+    <h2>2. Какие данные мы собираем</h2>
+    <ul>
+      <li>
+        <strong>Анонимный идентификатор устройства.</strong> При первом запуске
+        мы генерируем случайный UUID (<code>deviceUuid</code>) и сохраняем его
+        локально. Мы никогда не считываем Android Advertising ID, IMEI,
+        MAC-адрес и другие постоянные аппаратные идентификаторы.
+      </li>
+      <li>
+        <strong>Отображаемое имя.</strong> Короткий ник, показываемый в таблице
+        рекордов. По умолчанию это автоматически сгенерированная заглушка; на
+        платформе Яндекс Игры имя может быть взято из вашего публичного профиля
+        Яндекса, если вы выбрали войти.
+      </li>
+      <li>
+        <strong>Игровая статистика.</strong> Финальный счёт и количество
+        пройденных платформ для каждого завершённого забега.
+      </li>
+      <li>
+        <strong>Настройки.</strong> Язык интерфейса, состояние звука и музыки,
+        признак премиум-подписки.
+      </li>
+    </ul>
+    <p>
+      Мы <strong>не</strong> собираем: ваше настоящее имя, электронную почту,
+      номер телефона, геолокацию, контакты, фотографии, данные с микрофона и
+      камеры, любые медицинские данные.
+    </p>
+
+    <h2>3. Как мы используем данные</h2>
+    <ul>
+      <li>Для отображения глобальных, недельных и платформо-специфичных таблиц лидеров.</li>
+      <li>Для синхронизации прогресса и настроек между вашими устройствами.</li>
+      <li>Для выявления и предотвращения мошенничества (проверки темпа ввода и правдоподобности счёта).</li>
+      <li>Для ответов на обращения в службу поддержки.</li>
+    </ul>
+
+    <h2>4. Где хранятся данные</h2>
+    <p>
+      Игровые данные хранятся в Supabase (PostgreSQL, размещённый на AWS) и
+      обслуживаются через Cloudflare Workers. Оба провайдера действуют в
+      соответствии со своими политиками конфиденциальности:
+    </p>
+    <ul>
+      <li><a href="https://supabase.com/privacy" rel="noopener">Политика конфиденциальности Supabase</a></li>
+      <li><a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Политика конфиденциальности Cloudflare</a></li>
+    </ul>
+
+    <h2>5. Сторонние платформы</h2>
+    <p>
+      В зависимости от того, откуда вы получили Приложение, применяются
+      дополнительные правила обработки данных на уровне платформы:
+    </p>
+    <ul>
+      <li><a href="https://yandex.ru/legal/games_termsofuse/" rel="noopener">Яндекс Игры</a></li>
+      <li><a href="https://policies.google.com/privacy?hl=ru" rel="noopener">Google Play</a></li>
+      <li><a href="https://www.rustore.ru/help/legal/privacy-policy" rel="noopener">RuStore</a></li>
+    </ul>
+
+    <h2>6. Передача данных</h2>
+    <p>
+      Ваше отображаемое имя и счёт могут показываться в публично доступных
+      таблицах лидеров внутри Приложения. Мы не продаём и не передаём ваши
+      данные третьим лицам.
+    </p>
+
+    <h2>7. Срок хранения</h2>
+    <p>
+      Мы храним игровые записи всё время работы Приложения. Вы можете запросить
+      удаление вашей записи в любой момент (см. раздел 9).
+    </p>
+
+    <h2>8. Дети</h2>
+    <p>
+      Приложение подходит для общей аудитории. Мы сознательно не собираем
+      данные детей младше 13 лет (или эквивалентного возраста, установленного
+      законодательством вашей страны).
+    </p>
+
+    <h2>9. Ваши права</h2>
+    <p>
+      В соответствии с применимым законодательством (включая GDPR для жителей
+      ЕС и Федеральный закон №152-ФЗ «О персональных данных» для жителей
+      Российской Федерации) вы можете запросить доступ к данным, связанным с
+      вашим <code>deviceUuid</code>, их исправление или удаление. Для
+      реализации этих прав напишите на
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a> и
+      укажите <code>deviceUuid</code>, отображаемый на экране настроек
+      Приложения.
+    </p>
+
+    <h2>10. Изменения</h2>
+    <p>
+      Мы можем обновлять эту политику время от времени. Дата «Обновлено» в
+      начале документа отражает текущую версию. О существенных изменениях мы
+      сообщим внутри Приложения.
+    </p>
+
+    <h2>11. Контакты</h2>
+    <p>
+      Остались вопросы? Пишите на
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>.
+    </p>
+  </body>
+</html>

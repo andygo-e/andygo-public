@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — Void Jump</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fg: #1a1d2b;
+        --muted: #5b6072;
+        --bg: #fafbff;
+        --accent: #4a64ff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8eaf2;
+          --muted: #9aa0b3;
+          --bg: #0b0d1a;
+          --accent: #8aa0ff;
+        }
+      }
+      body {
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--fg);
+        background: var(--bg);
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 20px 64px;
+      }
+      .lang-switch {
+        float: right;
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .lang-switch a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .lang-switch .current {
+        color: var(--fg);
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 20px;
+        border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+        padding-bottom: 4px;
+      }
+      .contact {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin: 16px 0;
+        font-size: 17px;
+      }
+      a {
+        color: var(--accent);
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      code {
+        background: color-mix(in srgb, var(--fg) 10%, transparent);
+        padding: 1px 5px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <span class="current">EN</span> · <a href="./support-ru.html">RU</a>
+    </div>
+    <h1>Void Jump — Support</h1>
+
+    <p class="contact">
+      📧 <a href="mailto:andygo-erevan@gmail.com?subject=Void%20Jump%20support">andygo-erevan@gmail.com</a>
+    </p>
+
+    <p>
+      Thanks for playing Void Jump. If something is not working, or you have a
+      suggestion, drop a line to the address above.
+    </p>
+
+    <h2>What to include in a support request</h2>
+    <ul>
+      <li>A short description of what you tried to do and what happened instead.</li>
+      <li>Your platform (Android, iOS, Yandex Games web, RuStore, etc.).</li>
+      <li>Device model and OS version (for mobile).</li>
+      <li>Browser and OS (for web).</li>
+      <li>
+        Your <code>deviceUuid</code> if it relates to leaderboard / progress —
+        you can find it in the Settings screen of the App.
+      </li>
+      <li>A screenshot or short screen recording, if relevant.</li>
+    </ul>
+
+    <h2>Response time</h2>
+    <p>
+      This is an independent project, so support is best-effort. Most messages
+      are answered within five business days.
+    </p>
+
+    <h2>Common questions</h2>
+
+    <h3 style="margin-top: 24px; font-size: 17px">Why did my score disappear?</h3>
+    <p>
+      Scores are tied to a per-device anonymous identifier. If you clear app data,
+      reinstall the App, or play on a different device without signing in to a
+      linked platform account (e.g. Yandex), the App treats you as a new player.
+      Contact support with your old <code>deviceUuid</code> if you have it.
+    </p>
+
+    <h3 style="margin-top: 24px; font-size: 17px">How do I delete my data?</h3>
+    <p>
+      Email the address above with your <code>deviceUuid</code> and we will remove
+      the associated record. See the
+      <a href="./privacy.html">Privacy Policy</a> for full details.
+    </p>
+
+    <h3 style="margin-top: 24px; font-size: 17px">Is the App free?</h3>
+    <p>
+      Yes. There are currently no advertisements and no in-app purchases.
+    </p>
+
+    <p style="margin-top: 32px">
+      See also: <a href="./privacy.html">Privacy Policy</a> ·
+      <a href="./terms.html">Terms of Service</a>.
+    </p>
+  </body>
+</html>
