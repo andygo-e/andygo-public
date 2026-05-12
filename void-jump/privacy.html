@@ -89,8 +89,10 @@
     <h2>1. Who we are</h2>
     <p>
       The App is developed and operated by AndyGo Games (contact:
-      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>). The App is currently
-      free, contains no advertisements, and offers no in-app purchases.
+      <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>). The App is free
+      to download and play. On supported platforms it shows advertisements
+      provided by third-party ad networks, and offers an optional in-app
+      purchase that disables those advertisements (see Sections 4 and 5).
     </p>
 
     <h2>2. What we collect</h2>
@@ -114,6 +116,14 @@
         <strong>Settings.</strong> Locale, sound on/off, music on/off, premium
         entitlement flags.
       </li>
+      <li>
+        <strong>Purchase status.</strong> If you buy the optional ad-removal
+        item, the App stores a boolean flag (<code>removeAds</code>) indicating
+        that you own it, plus the purchase receipt identifier returned by the
+        store. We do <strong>not</strong> receive your payment-method details —
+        those are handled exclusively by the store (Google Play Billing on
+        Android, Yandex IAP on Yandex Games).
+      </li>
     </ul>
     <p>
       We do <strong>not</strong> collect: your real name, email, phone number,
@@ -128,7 +138,36 @@
       <li>To respond to support requests.</li>
     </ul>
 
-    <h2>4. Where it is stored</h2>
+    <h2>4. Advertisements</h2>
+    <p>
+      On platforms where the App shows ads (currently Yandex Games; Android
+      ads via Yandex Mobile Ads or Google AdMob may be added in future
+      releases), the embedded ad SDK independently collects a limited set of
+      data on the device — typically a non-persistent advertising identifier,
+      coarse approximate location, and basic device characteristics — to
+      serve and measure ads. We do not have direct access to this data; we
+      receive only aggregate revenue reports.
+    </p>
+    <p>
+      Ad-network data handling is governed by their own privacy policies:
+    </p>
+    <ul>
+      <li><a href="https://yandex.com/legal/games_termsofuse/" rel="noopener">Yandex Games advertising</a></li>
+      <li><a href="https://yandex.com/legal/mobileads_sdk_agreement/" rel="noopener">Yandex Mobile Ads SDK</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" rel="noopener">Google AdMob / Google Ads</a></li>
+    </ul>
+
+    <h2>5. Purchases</h2>
+    <p>
+      The optional ad-removal in-app purchase is processed entirely by the
+      platform store (Google Play Billing on Android, Yandex IAP API on
+      Yandex Games). We receive a confirmation that your account is entitled
+      to the item — we never see your bank card, billing address, or any
+      payment-method information. Refunds are handled by the store under its
+      own refund policy.
+    </p>
+
+    <h2>6. Where it is stored</h2>
     <p>
       Game data is stored in Supabase (PostgreSQL, hosted on AWS) and served via
       Cloudflare Workers. Both providers operate under their own privacy practices:
@@ -138,7 +177,7 @@
       <li><a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a></li>
     </ul>
 
-    <h2>5. Third-party platforms</h2>
+    <h2>7. Third-party platforms</h2>
     <p>
       Depending on where you obtained the App, additional platform-level data
       handling applies:
@@ -149,25 +188,25 @@
       <li><a href="https://www.rustore.ru/help/legal/privacy-policy" rel="noopener">RuStore</a></li>
     </ul>
 
-    <h2>6. Sharing</h2>
+    <h2>8. Sharing</h2>
     <p>
       Your display name and score may appear in publicly visible leaderboards
       within the App. We do not sell or rent your data to third parties.
     </p>
 
-    <h2>7. Retention</h2>
+    <h2>9. Retention</h2>
     <p>
       We keep gameplay records for as long as the App is operated. You may request
-      deletion of your record at any time (see Section 10).
+      deletion of your record at any time (see Section 11).
     </p>
 
-    <h2>8. Children</h2>
+    <h2>10. Children</h2>
     <p>
       The App is suitable for general audiences. We do not knowingly collect data
       from children under 13 (or the equivalent age in your jurisdiction).
     </p>
 
-    <h2>9. Your rights</h2>
+    <h2>11. Your rights</h2>
     <p>
       Subject to your local law (including the GDPR for EU residents), you may
       request access to, correction of, or deletion of the data associated with
@@ -176,14 +215,14 @@
       <code>deviceUuid</code> shown in the App's settings screen.
     </p>
 
-    <h2>10. Changes</h2>
+    <h2>12. Changes</h2>
     <p>
       We may update this policy from time to time. The "Last updated" date at the
       top reflects the current version. Material changes will be announced inside
       the App.
     </p>
 
-    <h2>11. Contact</h2>
+    <h2>13. Contact</h2>
     <p>
       Questions? Email
       <a href="mailto:andygo-erevan@gmail.com">andygo-erevan@gmail.com</a>.
